@@ -6,7 +6,7 @@ import './styles/index.scss';
 import { Sidebar } from 'widgets/Sidebar';
 import { Suspense } from 'react';
 
-const App = () => {
+function App() {
   const { theme } = useTheme();
 
   return (
@@ -20,6 +20,6 @@ const App = () => {
       </Suspense>
     </div>
   );
-};
+}
 
 export default App;
