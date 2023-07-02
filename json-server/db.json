@@ -25,5 +25,14 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Никита",
+    "lastname": "Копылов",
+    "age": 19,
+    "currency": "RUB",
+    "country": "Russia",
+    "city": "Moscow",
+    "username": "admin",
+    "avatar": "https://phonoteka.org/uploads/posts/2022-09/1663695173_27-phonoteka-org-p-programmist-fon-vkontakte-34.jpg"
+  }
 }
