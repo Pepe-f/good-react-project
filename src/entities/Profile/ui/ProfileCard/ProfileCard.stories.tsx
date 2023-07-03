@@ -2,7 +2,6 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { Country } from 'entities/Country';
 import { Currency } from 'entities/Currency';
-import avatar from 'shared/assets/tests/storybook.jpg';
 import { ProfileCard } from './ProfileCard';
 
 export default {
@@ -25,7 +24,7 @@ Primary.args = {
     first: 'Nikita',
     currency: Currency.RUB,
     city: 'Moscow',
-    avatar,
+    avatar: 'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
   },
 };
 
