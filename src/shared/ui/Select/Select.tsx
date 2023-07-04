@@ -42,7 +42,9 @@ export const Select = memo((props: SelectProps) => {
     ));
   }, [options]);
 
-  const mods: Mods = {};
+  const mods: Mods = {
+    [cls.readOnly]: readOnly,
+  };
 
   return (
     <div className={classNames(cls.wrapper, mods, [className])}>
