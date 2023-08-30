@@ -25,5 +25,7 @@
   "Укажите валюту": "Select currency",
   "Укажите страну": "Select country",
   "Произошла ошибка при загрузке статьи": "An error occurred while loading the article",
-  "Комментарии отсутствуют": "No comments"
+  "Комментарии отсутствуют": "No comments",
+  "Введите текст комментария": "Enter comment text",
+  "Отправить": "Send"
 }
