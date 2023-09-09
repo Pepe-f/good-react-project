@@ -2,20 +2,18 @@ import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
 
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Page } from './Page';
+import { ArticlesPageFilters } from './ArticlesPageFilters';
 
 export default {
-  title: 'shared/Page',
-  component: Page,
+  title: 'pages/ArticlesPage/ArticlesPageFilters',
+  component: ArticlesPageFilters,
   argTypes: {
     backgroundColor: { control: 'color' },
   },
-} as ComponentMeta<typeof Page>;
+} as ComponentMeta<typeof ArticlesPageFilters>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
+const Template: ComponentStory<typeof ArticlesPageFilters> = (args) => <ArticlesPageFilters {...args} />;
 
 export const Normal = Template.bind({});
-Normal.args = {
-  children: <div>Page</div>,
-};
+Normal.args = {};
 Normal.decorators = [StoreDecorator({})];
