@@ -22,6 +22,7 @@ module.exports = {
     '@typescript-eslint',
     'i18next',
     'react-hooks',
+    'fsd-path-validity-checker',
   ],
   rules: {
     'react/jsx-indent': [2, 2],
@@ -58,6 +59,7 @@ module.exports = {
     'arrow-body-style': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
+    'fsd-path-validity-checker/path-checker': 'error',
   },
   globals: {
     __IS_DEV__: true,
