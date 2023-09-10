@@ -5,7 +5,7 @@ import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDeco
 import { Page } from './Page';
 
 export default {
-  title: 'shared/Page',
+  title: 'widgets/Page',
   component: Page,
   argTypes: {
     backgroundColor: { control: 'color' },
