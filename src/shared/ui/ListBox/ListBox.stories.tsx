@@ -9,6 +9,9 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  decorators: [
+    (Story) => <div style={{ padding: 100 }}><Story /></div>,
+  ],
 } as ComponentMeta<typeof ListBox>;
 
 const Template: ComponentStory<typeof ListBox> = (args) => <ListBox {...args} />;
@@ -36,13 +39,40 @@ Normal.args = {
   defaultValue: 'Select item',
 };
 
-export const DirectionTop = Template.bind({});
-DirectionTop.args = {
+export const DirectionTopLeft = Template.bind({});
+DirectionTopLeft.args = {
   items,
   onChange: () => {},
   value: 'Select item',
   defaultValue: 'Select item',
-  direction: 'top',
+  direction: 'top left',
+};
+
+export const DirectionTopRight = Template.bind({});
+DirectionTopRight.args = {
+  items,
+  onChange: () => {},
+  value: 'Select item',
+  defaultValue: 'Select item',
+  direction: 'top right',
+};
+
+export const DirectionBottomLeft = Template.bind({});
+DirectionBottomLeft.args = {
+  items,
+  onChange: () => {},
+  value: 'Select item',
+  defaultValue: 'Select item',
+  direction: 'bottom left',
+};
+
+export const DirectionBottomRight = Template.bind({});
+DirectionBottomRight.args = {
+  items,
+  onChange: () => {},
+  value: 'Select item',
+  defaultValue: 'Select item',
+  direction: 'bottom right',
 };
 
 export const Readonly = Template.bind({});
