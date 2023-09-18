@@ -4,11 +4,10 @@ import { ComponentMeta, ComponentStory } from '@storybook/react';
 import { ThemeDecorator } from 'shared/config/storybook/ThemeDecorator/ThemeDecorator';
 import { Theme } from 'app/providers/ThemeProvider';
 import { StoreDecorator } from 'shared/config/storybook/StoreDecorator/StoreDecorator';
-import { Normal } from 'pages/ArticlesPage/ui/ArticlesPageFilters/ArticlesPageFilters.stories';
 import { NotFoundPage } from './NotFoundPage';
 
 export default {
-  title: 'pages/NotFoundPage',
+  title: 'pages/NotFoundPage/NotFoundPage',
   component: NotFoundPage,
   argTypes: {
     backgroundColor: { control: 'color' },
