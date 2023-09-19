@@ -2,13 +2,15 @@ import { CounterSchema } from 'entities/Counter';
 import { UserSchema } from 'entities/User';
 import { LoginSchema } from 'features/AuthByUsername';
 import {
-  AnyAction, CombinedState, EnhancedStore, Reducer, ReducersMapObject,
+  AnyAction,
+  CombinedState,
+  EnhancedStore,
+  Reducer,
+  ReducersMapObject,
 } from '@reduxjs/toolkit';
 import { AxiosInstance } from 'axios';
 import { ArticleDetailsSchema } from 'entities/Article';
-import {
-  ArticleDetailsPageSchema,
-} from 'pages/ArticleDetailsPage';
+import { ArticleDetailsPageSchema } from 'pages/ArticleDetailsPage';
 import { AddCommentFormSchema } from 'features/AddCommentForm';
 import { ArticlesPageSchema } from 'pages/ArticlesPage';
 import { UISchema } from 'features/UI';
@@ -30,7 +32,7 @@ export interface StateSchema {
 }
 
 export type StateSchemaKey = keyof StateSchema;
-export type MountedReducers = OptionalRecord<StateSchemaKey, boolean>
+export type MountedReducers = OptionalRecord<StateSchemaKey, boolean>;
 
 export interface ReducerManager {
   getReducerMap: () => ReducersMapObject<StateSchema>;

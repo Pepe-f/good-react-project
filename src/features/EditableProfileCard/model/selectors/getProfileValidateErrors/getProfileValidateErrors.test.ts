@@ -6,7 +6,10 @@ describe('getProfileValidateErrors', () => {
   test('Should work with filled state', () => {
     const state: DeepPartial<StateSchema> = {
       profile: {
-        validateErrors: [ValidateProfileError.SERVER_ERROR, ValidateProfileError.NO_DATA],
+        validateErrors: [
+          ValidateProfileError.SERVER_ERROR,
+          ValidateProfileError.NO_DATA,
+        ],
       },
     };
     expect(getProfileValidateErrors(state as StateSchema)).toEqual([

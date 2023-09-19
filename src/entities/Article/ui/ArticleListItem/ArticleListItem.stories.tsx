@@ -12,7 +12,9 @@ export default {
   },
 } as ComponentMeta<typeof ArticleListItem>;
 
-const Template: ComponentStory<typeof ArticleListItem> = (args) => <ArticleListItem {...args} />;
+const Template: ComponentStory<typeof ArticleListItem> = (args) => (
+  <ArticleListItem {...args} />
+);
 
 const article = {
   id: '1',
@@ -24,11 +26,10 @@ const article = {
   user: {
     id: '1',
     username: 'User',
-    avatar: 'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
+    avatar:
+      'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
   },
-  type: [
-    'IT',
-  ],
+  type: ['IT'],
   blocks: [
     {
       id: '1',

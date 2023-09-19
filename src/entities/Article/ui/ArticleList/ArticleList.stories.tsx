@@ -12,7 +12,9 @@ export default {
   },
 } as ComponentMeta<typeof ArticleList>;
 
-const Template: ComponentStory<typeof ArticleList> = (args) => <ArticleList {...args} />;
+const Template: ComponentStory<typeof ArticleList> = (args) => (
+  <ArticleList {...args} />
+);
 
 const article = {
   id: '1',
@@ -24,11 +26,10 @@ const article = {
   user: {
     id: '1',
     username: 'User',
-    avatar: 'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
+    avatar:
+      'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
   },
-  type: [
-    'IT',
-  ],
+  type: ['IT'],
   blocks: [
     {
       id: '1',
@@ -93,12 +94,10 @@ const article = {
 
 export const List = Template.bind({});
 List.args = {
-  articles: new Array(9)
-    .fill(0)
-    .map((item, index) => ({
-      ...article,
-      id: String(index),
-    })),
+  articles: new Array(9).fill(0).map((item, index) => ({
+    ...article,
+    id: String(index),
+  })),
   isLoading: false,
   view: ArticleView.LIST,
 };
@@ -112,12 +111,10 @@ ListLoading.args = {
 
 export const Tile = Template.bind({});
 Tile.args = {
-  articles: new Array(9)
-    .fill(0)
-    .map((item, index) => ({
-      ...article,
-      id: String(index),
-    })),
+  articles: new Array(9).fill(0).map((item, index) => ({
+    ...article,
+    id: String(index),
+  })),
   isLoading: false,
   view: ArticleView.TILE,
 };

@@ -8,6 +8,7 @@ module.exports = {
     'plugin:react/recommended',
     'airbnb',
     'plugin:i18next/recommended',
+    'prettier',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -25,9 +26,6 @@ module.exports = {
     'fsd-path-validity-checker',
   ],
   rules: {
-    'react/jsx-indent': [2, 2],
-    'react/jsx-indent-props': [2, 2],
-    indent: [2, 2],
     'react/react-in-jsx-scope': 'off',
     'react/jsx-filename-extension': [
       2,
@@ -70,6 +68,7 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'fsd-path-validity-checker/path-checker': 'error',
+    'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
   },
   globals: {
     __IS_DEV__: true,

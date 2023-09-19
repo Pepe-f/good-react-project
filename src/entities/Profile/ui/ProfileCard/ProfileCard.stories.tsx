@@ -12,7 +12,9 @@ export default {
   },
 } as ComponentMeta<typeof ProfileCard>;
 
-const Template: ComponentStory<typeof ProfileCard> = (args) => <ProfileCard {...args} />;
+const Template: ComponentStory<typeof ProfileCard> = (args) => (
+  <ProfileCard {...args} />
+);
 
 export const Primary = Template.bind({});
 Primary.args = {
@@ -24,7 +26,8 @@ Primary.args = {
     first: 'Nikita',
     currency: Currency.RUB,
     city: 'Moscow',
-    avatar: 'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
+    avatar:
+      'https://yt4.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj',
   },
 };
 

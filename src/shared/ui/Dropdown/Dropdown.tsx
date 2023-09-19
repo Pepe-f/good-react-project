@@ -27,23 +27,16 @@ const mapDirectionClass: Record<DropdownDirection, string> = {
 };
 
 export const Dropdown = memo((props: DropdownProps) => {
-  const {
-    className,
-    items,
-    trigger,
-    direction = 'bottom right',
-  } = props;
+  const { className, items, trigger, direction = 'bottom right' } = props;
 
   const menuClasses = [mapDirectionClass[direction]];
 
   return (
     <Menu as="div" className={classNames(cls.Dropdown, {}, [className])}>
-      <Menu.Button className={cls.btn}>
-        {trigger}
-      </Menu.Button>
+      <Menu.Button className={cls.btn}>{trigger}</Menu.Button>
       <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
         {items.map((item, index) => {
-          const content = ({ active }: {active: boolean}) => (
+          const content = ({ active }: { active: boolean }) => (
             <button
               type="button"
               onClick={item.onClick}
@@ -56,7 +49,12 @@ export const Dropdown = memo((props: DropdownProps) => {
 
           if (item.href) {
             return (
-              <Menu.Item key={index} as={AppLink} to={item.href} disabled={item.disabled}>
+              <Menu.Item
+                key={index}
+                as={AppLink}
+                to={item.href}
+                disabled={item.disabled}
+              >
                 {content}
               </Menu.Item>
             );

@@ -11,7 +11,10 @@ import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
 import cls from './ArticleListItem.module.scss';
 import {
-  Article, ArticleBlockType, ArticleTextBlock, ArticleView,
+  Article,
+  ArticleBlockType,
+  ArticleTextBlock,
+  ArticleView,
 } from '../../model/types/article';
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 
@@ -23,9 +26,7 @@ interface ArticleListItemProps {
 }
 
 export const ArticleListItem = memo((props: ArticleListItemProps) => {
-  const {
-    className, article, view, target,
-  } = props;
+  const { className, article, view, target } = props;
   const { t } = useTranslation();
 
   const types = <Text text={article.type.join(', ')} className={cls.types} />;
@@ -42,7 +43,9 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
     ) as ArticleTextBlock;
 
     return (
-      <div className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}>
+      <div
+        className={classNames(cls.ArticleListItem, {}, [className, cls[view]])}
+      >
         <Card className={cls.card}>
           <div className={cls.header}>
             <Avatar size={30} src={article.user.avatar} />
@@ -53,10 +56,16 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
           {types}
           <img src={article.img} alt={article.title} className={cls.img} />
           {textBlock && (
-            <ArticleTextBlockComponent block={textBlock} className={cls.textBlock} />
+            <ArticleTextBlockComponent
+              block={textBlock}
+              className={cls.textBlock}
+            />
           )}
           <div className={cls.footer}>
-            <AppLink to={RoutePath.article_details + article.id} target={target}>
+            <AppLink
+              to={RoutePath.article_details + article.id}
+              target={target}
+            >
               <Button theme={ButtonTheme.OUTLINE}>
                 {t('Читать далее...')}
               </Button>
