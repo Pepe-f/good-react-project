@@ -10,7 +10,7 @@ import {
   ArticleType,
   ArticleView,
 } from 'entities/Article';
-import { ARTICLE_VIEW_LOCALSTORAGE_KEY } from 'shared/constants/localStorage';
+import { ARTICLE_VIEW_LOCALSTORAGE_KEY } from 'shared/consts/localStorage';
 import { SortOrder } from 'shared/types';
 import { ArticlesPageSchema } from '../types/articlesPageSchema';
 import { fetchArticlesList } from '../../model/services/fetchArticlesList/fetchArticlesList';
