@@ -55,6 +55,7 @@ module.exports = {
           'gap',
           'role',
           'as',
+          'border',
         ],
       },
     ],
@@ -68,7 +69,7 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'fsd-path-validity-checker/path-checker': 'error',
-    'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
+    // 'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
   },
   globals: {
     __IS_DEV__: true,
