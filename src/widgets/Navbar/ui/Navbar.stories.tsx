@@ -12,6 +12,32 @@ export default {
   argTypes: {
     backgroundColor: { control: 'color' },
   },
+  parameters: {
+    mockData: [
+      {
+        url: `${__API__}/notifications`,
+        method: 'GET',
+        status: 200,
+        response: [
+          {
+            id: '1',
+            title: 'Notification 1',
+            description: 'Notification description 1',
+          },
+          {
+            id: '2',
+            title: 'Notification 2',
+            description: 'Notification description 2',
+          },
+          {
+            id: '3',
+            title: 'Notification 3',
+            description: 'Notification description 3',
+          },
+        ],
+      },
+    ],
+  },
 } as ComponentMeta<typeof Navbar>;
 
 const Template: ComponentStory<typeof Navbar> = (args) => <Navbar {...args} />;
