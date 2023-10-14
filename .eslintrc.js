@@ -68,7 +68,7 @@ module.exports = {
     'arrow-body-style': 'off',
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
-    'fsd-path-validity-checker/path-checker': 'error',
+    'fsd-path-validity-checker/path-checker': ['error', { alias: '@' }],
     // 'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
   },
   globals: {
