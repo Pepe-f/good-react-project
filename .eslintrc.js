@@ -69,7 +69,17 @@ module.exports = {
     'no-undef': 'off',
     'react/no-array-index-key': 'off',
     'fsd-path-validity-checker/path-checker': ['error', { alias: '@' }],
-    'fsd-path-validity-checker/public-api-imports': ['error', { alias: '@' }],
+    'fsd-path-validity-checker/public-api-imports': [
+      'error',
+      {
+        alias: '@',
+        testFilesPatterns: [
+          '**/*.test.*',
+          '**/*.stories.*',
+          '**/StoreDecorator.tsx',
+        ],
+      },
+    ],
     // 'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
   },
   globals: {
