@@ -80,6 +80,13 @@ module.exports = {
         ],
       },
     ],
+    'fsd-path-validity-checker/layer-imports': [
+      'error',
+      {
+        alias: '@',
+        ignoreImportPatterns: ['**/StoreProvider', '**/testing'],
+      },
+    ],
     // 'react/jsx-max-props-per-line': ['error', { maximum: 3 }],
   },
   globals: {
