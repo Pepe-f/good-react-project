@@ -24,6 +24,7 @@ module.exports = {
     'i18next',
     'react-hooks',
     'fsd-path-validity-checker',
+    'unused-imports',
   ],
   rules: {
     'react/react-in-jsx-scope': 'off',
@@ -31,6 +32,7 @@ module.exports = {
       2,
       { extensions: ['.js', '.jsx', '.tsx'] },
     ],
+    'unused-imports/no-unused-imports': 'error',
     'import/no-unresolved': 'off',
     'import/prefer-default-export': 'off',
     'no-unused-vars': 'off',
