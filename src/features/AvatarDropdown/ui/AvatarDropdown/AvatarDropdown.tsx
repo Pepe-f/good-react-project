@@ -10,10 +10,7 @@ import {
   isUserManager,
   userActions,
 } from '@/entities/User';
-import {
-  getRouteAdminPanel,
-  getRouteProfile,
-} from '@/shared/consts/router';
+import { getRouteAdminPanel, getRouteProfile } from '@/shared/consts/router';
 
 interface AvatarDropdownProps {
   className?: string;
@@ -60,7 +57,7 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
           onClick: onLogout,
         },
       ]}
-      trigger={<Avatar size={30} src={authData.avatar} />}
+      trigger={<Avatar size={30} src={authData.avatar} fallbackInverted />}
       className={classNames('', {}, [className])}
     />
   );
