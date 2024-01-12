@@ -549,6 +549,45 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Научная статья - Биология",
+      "subtitle": "БиологиЯ",
+      "img": "https://demotivation.ru/wp-content/uploads/2020/03/1-baurin-2-2048x1364.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "uu123P2"
+    },
+    {
+      "title": "Научная статья - Биология",
+      "subtitle": "БиологиЯ",
+      "img": "https://demotivation.ru/wp-content/uploads/2020/03/1-baurin-2-2048x1364.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "_AKp4g8"
+    },
+    {
+      "title": "Научная статья - Биология",
+      "subtitle": "БиологиЯ",
+      "img": "https://demotivation.ru/wp-content/uploads/2020/03/1-baurin-2-2048x1364.jpg",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "jyNLAEp"
     }
   ],
   "comments": [
@@ -666,6 +705,17 @@
       "country": "Russia",
       "city": "Moscow",
       "username": "nick",
+      "avatar": "https://oir.mobi/uploads/posts/2021-03/1616741653_10-p-khaker-krasivo-12.jpg"
+    },
+    {
+      "id": "4",
+      "first": "Test",
+      "lastname": "User",
+      "age": 19,
+      "currency": "EUR",
+      "country": "Russia",
+      "city": "Moscow",
+      "username": "testuser",
       "avatar": "https://oir.mobi/uploads/posts/2021-03/1616741653_10-p-khaker-krasivo-12.jpg"
     }
   ],
